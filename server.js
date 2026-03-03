@@ -29,5 +29,5 @@ app.use("/api", apiRoutes);
 
 // 5. ENCENDIDO DEL SERVIDOR
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo perfectamente en http://localhost:${PORT}`);
+  console.log(`Servidor corriendo perfectamente en el puerto ${PORT}`);
 });
