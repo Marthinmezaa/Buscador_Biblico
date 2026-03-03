@@ -3,9 +3,9 @@ const Versiculo = require("../models/versiculoModel");
 
 const busquedaController = {
   // Funcion activada cuando el usuario hace una busqueda por etiqueta
-  buscarPorEtiqueta: (req, res) => {
+  buscarPorEmocion: (req, res) => {
     // Agarrar la palabra que viene del URL
-    const emocionBusqueda = req.params.emocion;
+    const emocionBuscada = req.params.emocion;
 
     // Orden al modelos para que ejecute la consulta SQL
     Versiculo.buscarPorEtiqueta(emocionBuscada, (err, resultados) => {
@@ -20,11 +20,11 @@ const busquedaController = {
       // Si hay busqueda exitosa, pero la equiqueta elegida no tiene versiculo
       if (resultados.length === 0) {
         return res.status(404).json({
-          mensaje: `Aun no tenemos versiculos registrados para: ${emocionBusqueda}`,
+          mensaje: `Aun no tenemos versiculos registrados para: ${emocionBuscada}`,
         });
       }
 
-      // Caso eitoso de busqueda de versiculos con etoqueta
+      // Caso eitoso de busqueda de versiculos con etiqueta
       res.status(200).json(resultados);
     });
   },
