@@ -178,3 +178,55 @@ header {
   transform: translateX(10px);
   border-bottom-color: var(--color-acento);
 }
+
+/* Contener de resultados estilo IA */
+.grid-resultados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+/* Respuesta (Versiculo) */
+.tarjeta-versiculo {
+  background-color: var(--fondo-tarjeta);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--color-borde);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: left;
+  border-left: 5px solid var(--color-acento);
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-versiculo:hover {
+  transform: translateY(-2px);
+}
+
+.cita-biblica {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-acento);
+  margin-bottom: 0.8rem;
+  display: block;
+  font-weight: 800;
+}
+
+.texto-versiculo {
+  font-size: 1.3rem;
+  color: var(--texto-claro);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* El mensaje de 'Buscando..' o error 404 */
+.mensaje-bienvenida {
+  color: var(--texto-secundario);
+  font-size: 1.1rem;
+  text-align: center;
+}

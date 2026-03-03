@@ -1,0 +1,23 @@
+[
+  {
+    "libro": "Mateo",
+    "capitulo": 11,
+    "versiculo": 28,
+    "texto": "Vengan a mí todos ustedes que están cansados y agobiados, y yo les daré descanso.",
+    "emocion": "Cansancio"
+  },
+  {
+    "libro": "Salmos",
+    "capitulo": 34,
+    "versiculo": 18,
+    "texto": "El Señor está cerca de los quebrantados de corazón, y salva a los de espíritu abatido.",
+    "emocion": "Tristeza"
+  },
+  {
+    "libro": "Efesios",
+    "capitulo": 4,
+    "versiculo": 26,
+    "texto": "Si se enojan, no pequen. No dejen que el sol se ponga estando aún enojados.",
+    "emocion": "Enojo"
+  }
+]

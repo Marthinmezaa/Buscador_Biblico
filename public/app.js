@@ -46,6 +46,9 @@ async function cargarEtiquetas() {
 
 // Busqueda de versiculos
 async function buscarVersiculos(emocion) {
+  contenedorResultados.innerHTML = "";
+
+  // Mostrar el mensaje de carga
   contenedorResultados.innerHTML =
     '<p class="mensaje-bienvenida">Buscando en la Biblia...</p>';
 
@@ -65,7 +68,7 @@ async function buscarVersiculos(emocion) {
       tarjeta.classList.add("tarjeta-versiculo");
 
       tarjeta.innerHTML = `
-                <span class="cita-biblica">${versiculo.libro} ${versiculo.capitulo}:${versiculo.numero_versiculo}</span>
+                <span class="cita-biblica">${versiculo.libro} ${versiculo.capitulo}:${versiculo.numero_versiculo} (NVI)</span>
                 <p class="texto-versiculo">"${versiculo.texto}"</p>
             `;
 

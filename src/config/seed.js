@@ -21,7 +21,7 @@ db.serialize(() => {
   db.run(`INSERT INTO versiculos (id, libro, capitulo, numero_versiculo, texto) VALUES 
         (101, 'Josué', 1, 9, 'Ya te lo he ordenado: ¡Sé fuerte y valiente! ¡No tengas miedo ni te desanimes! Porque el Señor tu Dios te acompañará dondequiera que vayas.'),
         (102, 'Filipenses', 4, 6, 'No se inquieten por nada; más bien, en toda ocasión, con oración y ruego, presenten sus peticiones a Dios y denle gracias.'),
-        (103, 'Jeremías', 29, 11, '"Porque yo sé muy bien los planes que tengo para ustedes —afirma el Señor—, planes de bienestar y no de calamidad, a fin de darles un futuro y una esperanza."')`);
+        (103, 'Jeremías', 29, 11, 'Porque yo sé muy bien los planes que tengo para ustedes —afirma el Señor—, planes de bienestar y no de calamidad, a fin de darles un futuro y una esperanza.')`);
 
   // 4. Conectar versiculos con etiquetas
   db.run(`INSERT INTO versiculo_etiqueta (versiculo_id, etiqueta_id) VALUES 
