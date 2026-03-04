@@ -97,6 +97,7 @@ header {
   display: flex;
   justify-content: center;
   max-width: 600px;
+  width: 100%;
   margin: 0 auto;
   gap: 10px;
 }
@@ -229,4 +230,36 @@ header {
   color: var(--texto-secundario);
   font-size: 1.1rem;
   text-align: center;
+}
+
+/* Adaptacion para celular */
+@media (max-width: 480px) {
+  .titulo-principal {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .caja-busqueda {
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 15px;
+  }
+
+  #input-busqueda {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .btn-primario {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+  }
 }
