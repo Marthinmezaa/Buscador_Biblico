@@ -20,7 +20,7 @@ db.serialize(() => {
   const sql = `INSERT INTO sinonimos (palabra_clave, emocion_oficial) VALUES 
         ('ansios', 'Ansiedad/Preocupación'),
         ('preocupad', 'Ansiedad/Preocupación'),
-        ('ansie', 'Ansiedad/Preocupación),
+        ('ansie', 'Ansiedad/Preocupación'),
         ('miedo', 'Miedo/Temor'),
         ('temor', 'Miedo/Temor'),
         ('panico', 'Miedo/Temor'),
