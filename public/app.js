@@ -82,7 +82,7 @@ async function cargarEtiquetas() {
         etiquetasDeEstaCat.forEach((etiqueta) => {
           const boton = document.createElement("button");
           boton.classList.add("btn-etiqueta");
-          boton.textContent = `# ${etiqueta.nombre}`;
+          boton.textContent = `#${etiqueta.nombre}`;
 
           boton.addEventListener("click", () => {
             buscarVersiculos(etiqueta.nombre);
@@ -107,7 +107,7 @@ async function buscarVersiculos(emocion) {
     '<p class="mensaje-bienvenida">Buscando en la Biblia...</p>';
 
   try {
-    const respuesta = await fetch(`/api/buscar/${emocion}`);
+    const respuesta = await fetch(`/api/buscar/${encodeURIComponent(emocion)}`);
     const datos = await respuesta.json();
 
     contenedorResultados.innerHTML = "";
@@ -138,63 +138,13 @@ async function buscarVersiculos(emocion) {
 }
 
 // ==========================================
-// 5. MOTOR DE BÚSQUEDA TIPO IA (Traductor)
+// 5. MOTOR DE BÚSQUEDA
 // ==========================================
-function interpretarEmocion(frase) {
-  let texto = frase.toLowerCase();
-
-  // Diccionario de sinónimos para mejorar la experiencia de usuario (UX)
-  if (
-    texto.includes("ansios") ||
-    texto.includes("ansiedad") ||
-    texto.includes("preocupad")
-  )
-    return "Ansiedad";
-  if (
-    texto.includes("miedo") ||
-    texto.includes("asustad") ||
-    texto.includes("temor") ||
-    texto.includes("panico")
-  )
-    return "Miedo";
-  if (
-    texto.includes("paz") ||
-    texto.includes("tranquil") ||
-    texto.includes("calma")
-  )
-    return "Paz";
-  if (
-    texto.includes("triste") ||
-    texto.includes("deprimid") ||
-    texto.includes("llorar") ||
-    texto.includes("mal")
-  )
-    return "Tristeza";
-  if (
-    texto.includes("cansad") ||
-    texto.includes("agotad") ||
-    texto.includes("estresad") ||
-    texto.includes("sin fuerzas")
-  )
-    return "Cansancio";
-  if (
-    texto.includes("enojad") ||
-    texto.includes("rabia") ||
-    texto.includes("ira") ||
-    texto.includes("furia")
-  )
-    return "Enojo";
-
-  // Fallback: Capitalizar la primera letra
-  return texto.charAt(0).toUpperCase() + texto.slice(1);
-}
-
 function procesarBusqueda() {
   let fraseEscrita = inputBusqueda.value.trim();
   if (fraseEscrita === "") return;
 
-  let emocionOficial = interpretarEmocion(fraseEscrita);
-  buscarVersiculos(emocionOficial);
+  buscarVersiculos(fraseEscrita);
 
   inputBusqueda.value = "";
 }

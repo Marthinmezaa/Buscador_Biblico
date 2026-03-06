@@ -1,73 +1,28 @@
 [
   {
-    "libro": "Isaías",
-    "capitulo": 41,
-    "versiculo": 10,
-    "texto": "Así que no temas, porque yo estoy contigo; no te angusties, porque yo soy tu Dios. Te fortaleceré y te ayudaré; te sostendré con la diestra de mi justicia.",
-    "emocion": "Miedo",
+    "libro": "Juan",
+    "capitulo": 20,
+    "versiculo": 22,
+    "texto": "Les aseguro que ustedes llorarán de dolor, mientras que el mundo se alegrará. Se pondrán tristes, pero su tristeza se convertirá en alegría. La mujer que está por dar a luz siente dolores porque ha llegado su momento, pero en cuanto nace la criatura se olvida de su angustia por la alegría de haber traído al mundo un nuevo ser. Lo mismo les pasa a ustedes; ahora están tristes, pero cuando vuelva a verlos se alegrarán y nadie les va a quitar esa alegría.",
+    "emocion": "Tristeza",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Salmos",
-    "capitulo": 56,
-    "versiculo": 3,
-    "texto": "Cuando siento miedo, pongo en ti mi confianza.",
-    "emocion": "Miedo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Salmos",
-    "capitulo": 56,
-    "versiculo": 3,
-    "texto": "Cuando siento miedo, pongo en ti mi confianza.",
-    "emocion": "Miedo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Josué",
-    "capitulo": 1,
-    "versiculo": 9,
-    "texto": "Ya te lo he ordenado: ¡Sé fuerte y valiente! ¡No tengas miedo ni te desanimes! Porque el Señor tu Dios te acompañará dondequiera que vayas.",
-    "emocion": "Miedo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Isaías",
-    "capitulo": 41,
+    "libro": "Santiago",
+    "capitulo": 5,
     "versiculo": 13,
-    "texto": "Porque yo soy el Señor tu Dios, que sostiene tu mano derecha; yo soy quien te dice: No temas, yo te ayudaré.",
-    "emocion": "Miedo",
+    "texto": "¿Está alguno entre vosotros afligido? Haga oración. ¿Está alguno alegre? Cante alabanzas.",
+    "emocion": "Tristeza",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Salmo",
-    "capitulo": 118,
-    "versiculo": 6,
-    "texto": "El Señor está conmigo y no tengo miedo; ¿qué me puede hacer un simple mortal?",
-    "emocion": "Miedo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "1 Juan",
-    "capitulo": 4,
-    "versiculo": 18,
-    "texto": "En el amor no hay temor, sino que el amor perfecto echa fuera el temor. El que teme espera el castigo, así que no ha sido perfeccionado en el amor.",
-    "emocion": "Miedo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 23,
-    "versiculo": 4,
-    "texto": "Aun si voy por valles tenebrosos, no temeré ningún mal porque tú estás a mi lado; tu vara y tu bastón me reconfortan.",
-    "emocion": "Miedo",
+    "libro": "Santiago",
+    "capitulo": 5,
+    "versiculo": 13,
+    "texto": "Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre misericordioso y Dios de toda consolación, 4 quien nos consuela en todas nuestras tribulaciones para que, con el mismo consuelo que de Dios hemos recibido, también nosotros podamos consolar a todos los que sufren.",
+    "emocion": "Tristeza",
     "categoria": "Negativos"
   }
 ]

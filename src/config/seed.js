@@ -12,6 +12,7 @@ console.log("Iniciando la siembra de datos de prueba...");
 db.serialize(() => {
   // 1. Limpieza total de tablas (El orden importa para no romper relaciones)
   db.run("DELETE FROM versiculo_etiqueta");
+  db.run("DELETE FROM sinonimos");
   db.run("DELETE FROM etiquetas");
   db.run("DELETE FROM versiculos");
 
@@ -34,6 +35,14 @@ db.serialize(() => {
         (101, 1), (101, 4),
         (102, 2), (102, 3),
         (103, 5), (103, 3)`);
+
+  // 5. Poblar el diccionario
+  db.run(`INSERT INTO sinonimos (palabra_clave, emocion_oficial) VALUES 
+        ('ansios', 'Ansiedad/Preocupación'),
+        ('preocupad', 'Ansiedad/Preocupación'),
+        ('miedo', 'Miedo/Temor'),
+        ('panico', 'Miedo/Temor'),
+        ('paz', 'Paz')`);
 
   console.log("¡Base de datos poblada con éxito y lista para pruebas!");
 });

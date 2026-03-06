@@ -45,6 +45,13 @@ db.serialize(() => {
         FOREIGN KEY (etiqueta_id) REFERENCES etiquetas(id)
         )`);
 
+  // Tabla Diccionario de IA
+  db.run(`CREATE TABLE IF NOT EXISTS sinonimos (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        palabra_clave TEXT NOT NULL UNIQUE,
+        emocion_oficial TEXT NOT NULL
+        )`);
+
   console.log("Estructura de tablas verificada y lista para operar.");
 });
 

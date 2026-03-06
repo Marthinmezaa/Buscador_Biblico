@@ -20,7 +20,7 @@ const Versiculo = {
             INNER JOIN versiculo_etiqueta ve ON v.id = ve.versiculo_id
             INNER JOIN etiquetas e ON ve.etiqueta_id = e.id
             WHERE e.nombre = ?
-            ORDER BY RANDOM()
+            ORDER BY RANDOM() LIMIT 3
         `;
 
     // Ejecutamos la consulta. Usamos [nombreEtiqueta] en lugar de inyectar la variable
