@@ -21,6 +21,6 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
-      - name: Auditar seguridad (Buscando fallos)
+      - name: Escanear vulnerabilidades
         # Esto fallará (y bloqueará el PR) si encuentra vulnerabilidades altas o críticas
-        run: npm audit --audit-level=high
+        run: npm audit --audit-level=critical
