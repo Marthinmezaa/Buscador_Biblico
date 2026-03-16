@@ -33,7 +33,9 @@ db.serialize(() => {
         ('desespera', 'Angustia/Desesperación'),
         ('ira', 'Ira/Enojo'),
         ('enoj', 'Ira/Enojo'),
-        ('nervi', 'Ira/Enojo')
+        ('nervi', 'Ira/Enojo'),
+        ('culp', 'Culpa/Remordimiento'),
+        ('remordim', 'Culpa/Remordimiento')
     `;
 
   db.run(sql, (err) => {

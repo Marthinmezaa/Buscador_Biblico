@@ -1,127 +1,91 @@
 [
   {
-    "libro": "Salmo",
-    "capitulo": 37,
-    "versiculo": 8,
-    "texto": "Refrena la ira, deja la furia; no te enojes, pues esto conduce al mal.",
-    "emocion": "Ira/Enojo",
+    "libro": "Romanos",
+    "capitulo": 8,
+    "versiculo": 1,
+    "texto": "Por lo tanto, ya no hay ninguna condenación para los que están en Cristo Jesús.",
+    "emocion": "Culpa/Remordimiento",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Proverbios",
+    "libro": "Romanos",
+    "capitulo": 5,
+    "versiculo": 1,
+    "texto": "En consecuencia, ya que hemos sido justificados mediante la fe, tenemos paz con Dios por medio de nuestro Señor Jesucristo.",
+    "emocion": "Culpa/Remordimiento",
+    "categoria": "Negativos"
+  },
+
+  {
+    "libro": "Lucas",
     "capitulo": 15,
-    "versiculo": 1,
-    "texto": "El que es paciente muestra gran inteligencia; el que es agresivo muestra mucha insensatez.",
-    "emocion": "Ira/Enojo",
+    "versiculo": 7,
+    "texto": "Les digo que así es también en el cielo: habrá más alegría por un solo pecador que se arrepienta que por noventa y nueve justos que no necesitan arrepentirse.",
+    "emocion": "Culpa/Remordimiento",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Santiago",
-    "capitulo": 1,
-    "versiculo": 20,
-    "texto": "pues el enojo de una persona no produce la vida justa que Dios quiere.",
-    "emocion": "Ira/Enojo",
+    "libro": "2 Corintios",
+    "capitulo": 7,
+    "versiculo": 10,
+    "texto": "La tristeza que proviene de Dios produce el arrepentimiento que lleva a la salvación, de la cual no hay que arrepentirse, mientras que la tristeza del mundo produce la muerte.",
+    "emocion": "Culpa/Remordimiento",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Efesios",
-    "capitulo": 4,
-    "versiculo": 31,
-    "texto": "Abandonen toda amargura, ira y enojo, gritos y calumnias y toda forma de malicia.",
-    "emocion": "Ira/Enojo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Efesios",
-    "capitulo": 4,
-    "versiculo": 32,
-    "texto": "Más bien, sean bondadosos y compasivos unos con otros y perdónense mutuamente, así como Dios los perdonó a ustedes en Cristo.",
-    "emocion": "Ira/Enojo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Santiago",
-    "capitulo": 1,
-    "versiculo": 19,
-    "texto": "Mis queridos hermanos, tengan presente esto: Todos deben estar listos para escuchar, pero no apresurarse para hablar ni para enojarse.",
-    "emocion": "Ira/Enojo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Proverbios",
+    "libro": "Romanos",
     "capitulo": 10,
-    "versiculo": 12,
-    "texto": "El odio es motivo de disensiones, pero el amor cubre todas las faltas.",
-    "emocion": "Ira/Enojo",
+    "versiculo": 13,
+    "texto": "porque «todo el que invoque el nombre del Señor será salvo».",
+    "emocion": "Culpa/Remordimiento",
+    "categoria": "Negativos"
+  },
+
+  {
+    "libro": "Isaías",
+    "capitulo": 6,
+    "versiculo": 7,
+    "texto": "Con ella me tocó los labios y me dijo: «Mira, esto ha tocado tus labios; tu maldad ha sido borrada y tu pecado, perdonado».",
+    "emocion": "Culpa/Remordimiento",
     "categoria": "Negativos"
   },
 
   {
     "libro": "Proverbios",
-    "capitulo": 19,
-    "versiculo": 11,
-    "texto": "El buen juicio hace al hombre paciente; su gloria es pasar por alto la ofensa.",
-    "emocion": "Ira/Enojo",
+    "capitulo": 28,
+    "versiculo": 13,
+    "texto": "Quien encubre su pecado jamás prospera; quien lo confiesa y lo deja, alcanza la misericordia.",
+    "emocion": "Culpa/Remordimiento",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Proverbios",
-    "capitulo": 17,
-    "versiculo": 27,
-    "texto": "El que es entendido refrena sus palabras; el que es prudente controla sus impulsos.",
-    "emocion": "Ira/Enojo",
+    "libro": "2 Corintios",
+    "capitulo": 5,
+    "versiculo": 17,
+    "texto": "Por lo tanto, si alguno está en Cristo, es una nueva creación. ¡Lo viejo ha pasado, ha llegado ya lo nuevo!.",
+    "emocion": "Culpa/Remordimiento",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Efesios",
-    "capitulo": 4,
-    "versiculo": "31-32",
-    "texto": "Abandonen toda amargura, ira y enojo, gritos y calumnias y toda forma de malicia. Más bien, sean bondadosos y compasivos unos con otros y perdónense mutuamente, así como Dios los perdonó a ustedes en Cristo.",
-    "emocion": "Ira/Enojo",
+    "libro": "1 Juan",
+    "capitulo": 2,
+    "versiculo": 2,
+    "texto": "Él es el sacrificio por el perdón de nuestros pecados y no solo por los nuestros, sino por los de todo el mundo.",
+    "emocion": "Culpa/Remordimiento",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Santiago",
-    "capitulo": 4,
-    "versiculo": 1,
-    "texto": "¿De dónde surgen las guerras y los conflictos entre ustedes? ¿No es precisamente de las pasiones que luchan dentro de ustedes mismos?.",
-    "emocion": "Ira/Enojo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Proverbios",
-    "capitulo": 29,
-    "versiculo": 11,
-    "texto": "El necio da rienda suelta a su ira, pero el sabio sabe dominarla.",
-    "emocion": "Ira/Enojo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Proverbios",
-    "capitulo": 29,
-    "versiculo": 11,
-    "texto": "El necio da rienda suelta a su ira, pero el sabio sabe dominarla.",
-    "emocion": "Ira/Enojo",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Nahúm",
-    "capitulo": 1,
-    "versiculo": 3,
-    "texto": "El Señor es lento para la ira, pero grande en poder. El Señor no deja sin castigo al culpable. Camina en el huracán y en la tormenta; las nubes son el polvo de sus pies.",
-    "emocion": "Ira/Enojo",
+    "libro": "2 Corintios",
+    "capitulo": 5,
+    "versiculo": 21,
+    "texto": "Al que no conoció pecado, por nosotros lo hizo pecado, para que nosotros fuésemos hechos justicia de Dios en él.",
+    "emocion": "Culpa/Remordimiento",
     "categoria": "Negativos"
   }
 ]
