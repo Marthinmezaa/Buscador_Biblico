@@ -1,91 +1,118 @@
 [
   {
-    "libro": "Romanos",
-    "capitulo": 8,
-    "versiculo": 1,
-    "texto": "Por lo tanto, ya no hay ninguna condenación para los que están en Cristo Jesús.",
-    "emocion": "Culpa/Remordimiento",
+    "libro": "1 Juan",
+    "capitulo": 1,
+    "versiculo": 9,
+    "texto": "Si confesamos nuestros pecados, Dios, que es fiel y justo, nos los perdonará y nos limpiará de toda maldad.",
+    "emocion": "Verguenza",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Romanos",
-    "capitulo": 5,
-    "versiculo": 1,
-    "texto": "En consecuencia, ya que hemos sido justificados mediante la fe, tenemos paz con Dios por medio de nuestro Señor Jesucristo.",
-    "emocion": "Culpa/Remordimiento",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "Lucas",
-    "capitulo": 15,
-    "versiculo": 7,
-    "texto": "Les digo que así es también en el cielo: habrá más alegría por un solo pecador que se arrepienta que por noventa y nueve justos que no necesitan arrepentirse.",
-    "emocion": "Culpa/Remordimiento",
-    "categoria": "Negativos"
-  },
-
-  {
-    "libro": "2 Corintios",
-    "capitulo": 7,
-    "versiculo": 10,
-    "texto": "La tristeza que proviene de Dios produce el arrepentimiento que lleva a la salvación, de la cual no hay que arrepentirse, mientras que la tristeza del mundo produce la muerte.",
-    "emocion": "Culpa/Remordimiento",
+    "libro": "Salmo",
+    "capitulo": 34,
+    "versiculo": "4-5",
+    "texto": "Busqué al Señor y él me respondió; me libró de todos mis temores, los que lo miran están radiantes; jamás su rostro se cubre de vergüenza.",
+    "emocion": "Verguenza",
     "categoria": "Negativos"
   },
 
   {
     "libro": "Romanos",
     "capitulo": 10,
-    "versiculo": 13,
-    "texto": "porque «todo el que invoque el nombre del Señor será salvo».",
-    "emocion": "Culpa/Remordimiento",
+    "versiculo": 11,
+    "texto": "Así dice la Escritura: «Todo el que confíe en él no será defraudado».",
+    "emocion": "Verguenza",
+    "categoria": "Negativos"
+  },
+
+  {
+    "libro": "Salmo",
+    "capitulo": 31,
+    "versiculo": 17,
+    "texto": "Señor , no permitas que me avergüencen, porque a ti he clamado. Que sean avergonzados los malvados y silenciados en el sepulcro.",
+    "emocion": "Verguenza",
+    "categoria": "Negativos"
+  },
+
+  {
+    "libro": "Marcos",
+    "capitulo": 8,
+    "versiculo": 38,
+    "texto": "Si alguien se avergüenza de mí y de mis palabras en medio de esta generación adúltera y pecadora, también el Hijo del hombre se avergonzará de él cuando venga en la gloria de su Padre con los santos ángeles.",
+    "emocion": "Verguenza",
+    "categoria": "Negativos"
+  },
+
+  {
+    "libro": "Romanos",
+    "capitulo": 8,
+    "versiculo": 1,
+    "texto": "Por lo tanto, ya no hay ninguna condenación para los que están en Cristo Jesús.",
+    "emocion": "Verguenza",
     "categoria": "Negativos"
   },
 
   {
     "libro": "Isaías",
-    "capitulo": 6,
-    "versiculo": 7,
-    "texto": "Con ella me tocó los labios y me dijo: «Mira, esto ha tocado tus labios; tu maldad ha sido borrada y tu pecado, perdonado».",
-    "emocion": "Culpa/Remordimiento",
+    "capitulo": 54,
+    "versiculo": 4,
+    "texto": "»No temas, porque no serás avergonzada. No te turbes, porque no serás humillada. Olvidarás la vergüenza de tu juventud y no recordarás más la deshonra de tu viudez.",
+    "emocion": "Verguenza",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "Proverbios",
-    "capitulo": 28,
-    "versiculo": 13,
-    "texto": "Quien encubre su pecado jamás prospera; quien lo confiesa y lo deja, alcanza la misericordia.",
-    "emocion": "Culpa/Remordimiento",
+    "libro": "Salmo",
+    "capitulo": 3,
+    "versiculo": 3,
+    "texto": "Pero tú, Señor , eres el escudo que me protege; tú eres mi gloria; tú mantienes en alto mi cabeza.",
+    "emocion": "Verguenza",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "2 Corintios",
-    "capitulo": 5,
-    "versiculo": 17,
-    "texto": "Por lo tanto, si alguno está en Cristo, es una nueva creación. ¡Lo viejo ha pasado, ha llegado ya lo nuevo!.",
-    "emocion": "Culpa/Remordimiento",
+    "libro": "Salmo",
+    "capitulo": 37,
+    "versiculo": "18-19",
+    "texto": "El Señor conoce la vida de los íntegros, y su herencia perdura por siempre, en tiempos difíciles no serán avergonzados; en épocas de hambre tendrán abundancia.",
+    "emocion": "Verguenza",
+    "categoria": "Negativos"
+  },
+
+  {
+    "libro": "Romanos",
+    "capitulo": 1,
+    "versiculo": 16,
+    "texto": "A la verdad, no me avergüenzo del evangelio, pues es poder de Dios para la salvación de todos los que creen: de los judíos primeramente, pero también de los que no son judíos.",
+    "emocion": "Verguenza",
     "categoria": "Negativos"
   },
 
   {
     "libro": "1 Juan",
     "capitulo": 2,
-    "versiculo": 2,
-    "texto": "Él es el sacrificio por el perdón de nuestros pecados y no solo por los nuestros, sino por los de todo el mundo.",
-    "emocion": "Culpa/Remordimiento",
+    "versiculo": 28,
+    "texto": "Y ahora, queridos hijos, permanezcan en él para que, cuando se manifieste, podamos presentarnos ante él confiadamente, seguros de no ser avergonzados en su venida.",
+    "emocion": "Verguenza",
     "categoria": "Negativos"
   },
 
   {
-    "libro": "2 Corintios",
-    "capitulo": 5,
-    "versiculo": 21,
-    "texto": "Al que no conoció pecado, por nosotros lo hizo pecado, para que nosotros fuésemos hechos justicia de Dios en él.",
-    "emocion": "Culpa/Remordimiento",
+    "libro": "Salmo",
+    "capitulo": 69,
+    "versiculo": 6,
+    "texto": "Señor Soberano de los Ejércitos, que no sean avergonzados por mi culpa los que en ti esperan; oh Dios de Israel, que no sean humillados por mi culpa los que te buscan.",
+    "emocion": "Verguenza",
+    "categoria": "Negativos"
+  },
+
+  {
+    "libro": "Miqueas",
+    "capitulo": 7,
+    "versiculo": 19,
+    "texto": "Vuelve a compadecerte de nosotros. Pon tu pie sobre nuestras maldades y arroja al fondo del mar todos nuestros pecados.",
+    "emocion": "Verguenza",
     "categoria": "Negativos"
   }
 ]
