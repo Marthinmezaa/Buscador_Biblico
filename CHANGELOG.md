@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/Marthinmezaa/Buscador_Biblico/compare/v1.2.1...v1.3.0) (2026-03-16)
+
+
+### Features
+
+* agregar nuevos versiculos de Culpa/Remordimiento y optimizar datos de entrenamiento IA ([7c7aabc](https://github.com/Marthinmezaa/Buscador_Biblico/commit/7c7aabc933d3386b940053bf66a6d47e89c89117))
+* agregar nuevos versiculos y optimizar datos de entrenamiento IA ([3062168](https://github.com/Marthinmezaa/Buscador_Biblico/commit/3062168508a00d539262802af3e30e2f6f4462c7))
+
 ## [1.2.1](https://github.com/Marthinmezaa/Buscador_Biblico/compare/v1.2.0...v1.2.1) (2026-03-13)
 
 
