@@ -65,7 +65,7 @@ const busquedaController = {
           `Emoción no encontrada en diccionario: "${fraseDelUsuario}"`,
         );
         return res.status(404).json({
-          error: `La emoción "${fraseDelUsuario}" no está en nuestro diccionario.`,
+          error: `Aun no tenemos versiculos para: ${fraseDelUsuario}.`,
         });
       }
 
