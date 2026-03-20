@@ -6,6 +6,7 @@
 // 1. IMPORTACIONES PRINCIPALES
 const express = require("express");
 const cors = require("cors");
+const morgan = require("morgan");
 const db = require("./src/config/db"); // Conexión a SQLite
 const apiRoutes = require("./src/routes/apiRoutes"); // Enrutador modular
 
@@ -16,6 +17,7 @@ const PORT = process.env.PORT || 3000;
 // 3. MIDDLEWARES (Filtros de capa intermedia)
 app.use(cors()); // Permite peticiones cruzadas
 app.use(express.json()); // Parsea los cuerpos de las peticiones a JSON
+app.use(morgan("dev")); // Permite ver las busqueda completadas y erradas
 app.use(express.static("public")); // Sirve los archivos del frontend (HTML, CSS, JS)
 
 // 4. RUTAS (Endpoints)
