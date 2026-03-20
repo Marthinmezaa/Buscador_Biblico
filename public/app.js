@@ -1,10 +1,10 @@
 /**
- * BUSCADOR BÍBLICO - LÓGICA DE CLIENTE (FRONTEND)
+ * BUSCADOR BIBLICO - LOGICA DE CLIENTE (FRONTEND)
  * Maneja la interfaz de usuario, eventos del DOM y peticiones a la API.
  */
 
 // ==========================================
-// 1. SELECCIÓN DE ELEMENTOS DEL DOM
+// 1. SELECCION DE ELEMENTOS DEL DOM
 // ==========================================
 const btnMenu = document.getElementById("btn-menu");
 const btnCerrarMenu = document.getElementById("btn-cerrar-menu");
@@ -17,15 +17,13 @@ const inputBusqueda = document.getElementById("input-busqueda");
 const btnBuscar = document.getElementById("btn-buscar");
 
 // ==========================================
-// 1.5. CACHÉ DE RESULTADOS (Mejora de Performance)
+// 1.5. CACHE DE RESULTADOS (Mejora de Performance)
 // ==========================================
-// Usamos un Map para almacenar resultados en memoria con TTL (1 hora = 3600000 ms)
-// Key: emoción (string), Value: { data: array de versículos, timestamp: fecha de creación }
 const cache = new Map();
 const TTL = 3600000; // 1 hora en milisegundos
 
 // ==========================================
-// 2. CONTROL DEL MENÚ LATERAL
+// 2. CONTROL DEL MENU LATERAL
 // ==========================================
 btnMenu.addEventListener("click", () => menuLateral.classList.add("activo"));
 btnCerrarMenu.addEventListener("click", () =>
@@ -40,7 +38,7 @@ document.addEventListener("keydown", (evento) => {
 });
 
 // ==========================================
-// 3. CARGA DE MENÚ DINÁMICO (Acordeón Anidado)
+// 3. CARGA DE MENU DINAMICO (Acordeon Anidado)
 // ==========================================
 async function cargarEtiquetas() {
   try {
@@ -49,25 +47,21 @@ async function cargarEtiquetas() {
 
     contenedorEtiquetas.innerHTML = "";
 
-    // --- NIVEL 1: Botón Principal "Atajos Emocionales" ---
     const btnAtajos = document.createElement("button");
     btnAtajos.textContent = "Atajos Emocionales ▾";
     btnAtajos.classList.add("btn-acordeon-principal");
     contenedorEtiquetas.appendChild(btnAtajos);
 
-    // Contenedor que guardará las categorías (Oculto por defecto)
     const panelCategorias = document.createElement("div");
     panelCategorias.classList.add("panel-oculto");
     contenedorEtiquetas.appendChild(panelCategorias);
 
-    // Lógica para abrir/cerrar "Atajos Emocionales"
     btnAtajos.addEventListener("click", () => {
       btnAtajos.classList.toggle("activo");
       panelCategorias.style.display =
         panelCategorias.style.display === "block" ? "none" : "block";
     });
 
-    // --- NIVEL 2: Las Categorías (Positivos, Neutros, Negativos) ---
     const ordenCategorias = ["Positivos", "Neutros", "Negativos"];
 
     ordenCategorias.forEach((nombreCat) => {
@@ -76,25 +70,21 @@ async function cargarEtiquetas() {
       );
 
       if (etiquetasDeEstaCat.length > 0) {
-        // Botón de la Categoría
         const btnCategoria = document.createElement("button");
         btnCategoria.textContent = `${nombreCat} ▾`;
         btnCategoria.classList.add("btn-acordeon-secundario");
         panelCategorias.appendChild(btnCategoria);
 
-        // Contenedor de las etiquetas finales (Oculto por defecto)
         const panelEtiquetas = document.createElement("div");
         panelEtiquetas.classList.add("panel-oculto", "panel-etiquetas");
         panelCategorias.appendChild(panelEtiquetas);
 
-        // Lógica para abrir/cerrar la Categoría
         btnCategoria.addEventListener("click", () => {
           btnCategoria.classList.toggle("activo");
           panelEtiquetas.style.display =
             panelEtiquetas.style.display === "block" ? "none" : "block";
         });
 
-        // --- NIVEL 3: Los hashtags clickeables ---
         etiquetasDeEstaCat.forEach((etiqueta) => {
           const boton = document.createElement("button");
           boton.classList.add("btn-etiqueta");
@@ -102,7 +92,7 @@ async function cargarEtiquetas() {
 
           boton.addEventListener("click", () => {
             buscarVersiculos(etiqueta.nombre);
-            menuLateral.classList.remove("activo"); // Cierra el menú al buscar
+            menuLateral.classList.remove("activo");
           });
 
           panelEtiquetas.appendChild(boton);
@@ -110,12 +100,12 @@ async function cargarEtiquetas() {
       }
     });
   } catch (error) {
-    console.error("Error al cargar el menú dinámico:", error);
+    console.error("Error al cargar el menu dinamico:", error);
   }
 }
 
 // ==========================================
-// 4. RENDERIZADO DE RESULTADOS (Función Auxiliar)
+// 4. RENDERIZADO DE RESULTADOS (Funcion Auxiliar)
 // ==========================================
 function renderizarResultados(versiculos) {
   contenedorResultados.innerHTML = "";
@@ -134,82 +124,76 @@ function renderizarResultados(versiculos) {
 }
 
 // ==========================================
-// 5. BÚSQUEDA Y RENDERIZADO DE VERSÍCULOS (con Caché)
+// 5. BUSQUEDA Y RENDERIZADO DE VERSICULOS (con Cache)
 // ==========================================
 async function buscarVersiculos(emocion) {
-  // Normalizar la emoción para usar como clave de caché
   const claveCache = emocion.toLowerCase().trim();
 
-  // 1. VERIFICAR CACHÉ: Si ya tenemos resultados, verificar si expiraron
+  // 1. VERIFICAR CACHE
   if (cache.has(claveCache)) {
     const entradaCache = cache.get(claveCache);
     const ahora = Date.now();
 
-    // Verificar si expiró (TTL de 1 hora)
     if (ahora - entradaCache.timestamp < TTL) {
       console.log(
-        `Resultados obtenidos desde caché (vigente) para: "${emocion}"`,
+        `Resultados obtenidos desde cache (vigente) para: "${emocion}"`,
       );
-      indicadorBusqueda.innerHTML = `Última búsqueda: <strong>"${emocion}"</strong> <span style="color: #4CAF50; font-size: 0.85rem;">(caché vigente)</span>`;
+      indicadorBusqueda.innerHTML = `Ultima busqueda: <strong>"${emocion}"</strong> <span style="color: #4CAF50; font-size: 0.85rem;">(cache vigente)</span>`;
       renderizarResultados(entradaCache.data);
       return;
     } else {
-      // Expiró, eliminar del caché
-      console.log(
-        `Caché expirado para: "${emocion}" (hace ${Math.floor((ahora - entradaCache.timestamp) / 60000)} minutos)`,
-      );
+      console.log(`Cache expirado para: "${emocion}"`);
       cache.delete(claveCache);
     }
   }
 
-  // 2. SI NO ESTÁ EN CACHÉ: Mostrar estado de carga y hacer petición
+  // 2. SI NO ESTA EN CACHE
   contenedorResultados.innerHTML =
     '<p class="mensaje-bienvenida">Buscando en la Biblia...</p>';
-
-  indicadorBusqueda.innerHTML = `Última búsqueda: <strong>"${emocion}"</strong>`;
+  indicadorBusqueda.innerHTML = `Ultima busqueda: <strong>"${emocion}"</strong>`;
 
   try {
     const respuesta = await fetch(`/api/buscar/${encodeURIComponent(emocion)}`);
     const datos = await respuesta.json();
 
-    // Manejo de errores desde el servidor (ej: emoción no encontrada)
+    // 3. MANEJO DE ERRORES INTELIGENTE (Solucion al UNDEFINED)
     if (!respuesta.ok) {
-      contenedorResultados.innerHTML = `<p class="mensaje-bienvenida">${datos.mensaje}</p>`;
+      const textoMostrar =
+        datos.mensaje ||
+        datos.error ||
+        `Aun no tenemos versiculos para '${emocion}'`;
+      contenedorResultados.innerHTML = `<p class="mensaje-bienvenida">${textoMostrar}</p>`;
       return;
     }
 
-    // 3. GUARDAR EN CACHÉ: Almacenar resultados con timestamp para TTL
+    // 4. GUARDAR EN CACHE Y RENDERIZAR
     cache.set(claveCache, { data: datos, timestamp: Date.now() });
-    console.log(`Resultados guardados en caché (con TTL) para: "${emocion}"`);
-
-    // 4. RENDERIZAR: Usar la función extraída
+    console.log(`Resultados guardados en cache (con TTL) para: "${emocion}"`);
     renderizarResultados(datos);
   } catch (error) {
-    console.error("Error en la petición de búsqueda:", error);
+    console.error("Error en la peticion de busqueda:", error);
     contenedorResultados.innerHTML =
-      '<p class="mensaje-bienvenida">Hubo un problema de conexión con el servidor.</p>';
+      '<p class="mensaje-bienvenida">Hubo un problema de conexion con el servidor.</p>';
   }
 }
 
 // ==========================================
-// 6. MOTOR DE BÚSQUEDA
+// 6. MOTOR DE BUSQUEDA
 // ==========================================
 function procesarBusqueda() {
   let fraseEscrita = inputBusqueda.value.trim();
   if (fraseEscrita === "") return;
 
   buscarVersiculos(fraseEscrita);
-
   inputBusqueda.value = "";
 }
 
-// Listeners del buscador central
 btnBuscar.addEventListener("click", procesarBusqueda);
 inputBusqueda.addEventListener("keypress", (evento) => {
   if (evento.key === "Enter") procesarBusqueda();
 });
 
 // ==========================================
-// 7. INICIALIZACIÓN DE LA APLICACIÓN
+// 7. INICIALIZACION DE LA APLICACION
 // ==========================================
 cargarEtiquetas();
