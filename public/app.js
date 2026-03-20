@@ -19,9 +19,10 @@ const btnBuscar = document.getElementById("btn-buscar");
 // ==========================================
 // 1.5. CACHÉ DE RESULTADOS (Mejora de Performance)
 // ==========================================
-// Usamos un Map para almacenar resultados en memoria
-// Key: emoción (string), Value: array de versículos
+// Usamos un Map para almacenar resultados en memoria con TTL (1 hora = 3600000 ms)
+// Key: emoción (string), Value: { data: array de versículos, timestamp: fecha de creación }
 const cache = new Map();
+const TTL = 3600000; // 1 hora en milisegundos
 
 // ==========================================
 // 2. CONTROL DEL MENÚ LATERAL
@@ -132,13 +133,26 @@ async function buscarVersiculos(emocion) {
   // Normalizar la emoción para usar como clave de caché
   const claveCache = emocion.toLowerCase().trim();
 
-  // 1. VERIFICAR CACHÉ: Si ya tenemos resultados, los usamos directamente
+  // 1. VERIFICAR CACHÉ: Si ya tenemos resultados, verificar si expiraron
   if (cache.has(claveCache)) {
-    console.log(`Resultados obtenidos desde caché para: "${emocion}"`);
-    const resultados = cache.get(claveCache);
-    indicadorBusqueda.innerHTML = `Última búsqueda: <strong>"${emocion}"</strong> <span style="color: #4CAF50; font-size: 0.85rem;">(caché)</span>`;
-    renderizarResultados(resultados);
-    return;
+    const entradaCache = cache.get(claveCache);
+    const ahora = Date.now();
+
+    // Verificar si expiró (TTL de 1 hora)
+    if (ahora - entradaCache.timestamp < TTL) {
+      console.log(
+        `Resultados obtenidos desde caché (vigente) para: "${emocion}"`,
+      );
+      indicadorBusqueda.innerHTML = `Última búsqueda: <strong>"${emocion}"</strong> <span style="color: #4CAF50; font-size: 0.85rem;">(caché vigente)</span>`;
+      renderizarResultados(entradaCache.data);
+      return;
+    } else {
+      // Expiró, eliminar del caché
+      console.log(
+        `Caché expirado para: "${emocion}" (hace ${Math.floor((ahora - entradaCache.timestamp) / 60000)} minutos)`,
+      );
+      cache.delete(claveCache);
+    }
   }
 
   // 2. SI NO ESTÁ EN CACHÉ: Mostrar estado de carga y hacer petición
@@ -157,9 +171,9 @@ async function buscarVersiculos(emocion) {
       return;
     }
 
-    // 3. GUARDAR EN CACHÉ: Almacenar resultados para búsquedas futuras
-    cache.set(claveCache, datos);
-    console.log(`Resultados guardados en caché para: "${emocion}"`);
+    // 3. GUARDAR EN CACHÉ: Almacenar resultados con timestamp para TTL
+    cache.set(claveCache, { data: datos, timestamp: Date.now() });
+    console.log(`Resultados guardados en caché (con TTL) para: "${emocion}"`);
 
     // 4. RENDERIZAR: Usar la función extraída
     renderizarResultados(datos);
