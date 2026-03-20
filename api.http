@@ -1,0 +1,14 @@
+### 1. Probar el Health Check (Tu nueva mejora)
+GET http://localhost:3000/health
+
+### 2. Obtener todas las etiquetas del menú
+GET http://localhost:3000/api/etiquetas
+
+### 3. Buscar versículos por emoción exitosa
+GET http://localhost:3000/api/buscar/paz
+
+### 4. Buscar una emoción compuesta (Probando tu seguridad URL)
+GET http://localhost:3000/api/buscar/Amor%2FAfecto
+
+### 5. Forzar un error 404 (Emoción que no existe)
+GET http://localhost:3000/api/buscar/palabrainventada
