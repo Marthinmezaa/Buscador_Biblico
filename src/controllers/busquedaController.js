@@ -40,13 +40,13 @@ const validateEmotionInput = (emotion) => {
 
 const busquedaController = {
   buscarPorEmocion: (req, res) => {
-    // 1. Obtener la emoción de la URL (decodificar parámetros codificados)
+    // 1. Obtener la emocion de la URL (decodificar parametros codificados)
     const fraseDelUsuario = decodeURIComponent(req.params.emocion);
 
     // 2. Validar entrada del usuario
     const validation = validateEmotionInput(fraseDelUsuario);
     if (!validation.isValid) {
-      console.error("Validación de entrada fallida:", validation.error);
+      console.error("Validacion de entrada fallida:", validation.error);
       return res.status(400).json({ error: validation.error });
     }
 
@@ -59,28 +59,28 @@ const busquedaController = {
           .json({ error: "Error interno al interpretar la frase." });
       }
 
-      // 4. Verificar que la emoción oficial exista
+      // 4. Verificar que la emocion oficial exista
       if (!emocionOficial) {
         console.warn(
-          `Emoción no encontrada en diccionario: "${fraseDelUsuario}"`,
+          `Emocion no encontrada en diccionario: "${fraseDelUsuario}"`,
         );
         return res.status(404).json({
           error: `Aun no tenemos versiculos para: ${fraseDelUsuario}.`,
         });
       }
 
-      // 5. AHORA SÍ: Con la emoción oficial en mano, mandamos a buscar los versículos.
+      // 5. AHORA SI: Con la emocion oficial en mano, mandamos a buscar los versiculos.
       Versiculo.buscarPorEtiqueta(emocionOficial, (err, resultados) => {
         if (err) {
-          console.error("Error de búsqueda:", err);
+          console.error("Error de busqueda:", err);
           return res.status(500).json({
-            error: "Error interno del servidor al buscar versículos.",
+            error: "Error interno del servidor al buscar versiculos.",
           });
         }
 
         if (resultados.length === 0) {
           return res.status(404).json({
-            mensaje: `Aún no tenemos versículos registrados para: ${emocionOficial}`,
+            mensaje: `Aun no tenemos versiculos registrados para: ${emocionOficial}`,
           });
         }
 
@@ -95,6 +95,9 @@ const busquedaController = {
       });
     });
   },
+
+  // Exponemos la funcion explicitamente para que Jest pueda probarla
+  validateEmotionInput: validateEmotionInput,
 };
 
 module.exports = busquedaController;
