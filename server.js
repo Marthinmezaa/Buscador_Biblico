@@ -20,6 +20,11 @@ app.use(express.json()); // Parsea los cuerpos de las peticiones a JSON
 app.use(morgan("dev")); // Permite ver las busqueda completadas y erradas
 app.use(express.static("public")); // Sirve los archivos del frontend (HTML, CSS, JS)
 
+// Morgan: Solo anota las peticiones si NO estamos en modo testing
+if (process.env.NODE_ENV !== "test") {
+  app.use(morgan("dev"));
+}
+
 // 4. RUTAS (Endpoints)
 // Endpoint de Health Check (Util para monitoreo en la nube como Render)
 app.get("/health", (req, res) => {
@@ -36,7 +41,16 @@ app.get("/", (req, res) => {
 // Montaje del enrutador modular para la API
 app.use("/api", apiRoutes);
 
+// ==========================================
 // 5. ENCENDIDO DEL SERVIDOR
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo perfectamente en el puerto ${PORT}`);
-});
+// ==========================================
+// Si el archivo se ejecuta directamente (ej: node server.js o nodemon), encendemos el puerto.
+// Si es importado por Jest (para testing), solo exportamos la app sin encender el puerto.
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Servidor corriendo perfectamente en el puerto ${PORT}`);
+  });
+}
+
+// Exportamos la app para que Supertest pueda inyectarle peticiones fantasma
+module.exports = app;
