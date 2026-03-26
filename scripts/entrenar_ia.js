@@ -1,7 +1,7 @@
 /**
- * SCRIPT QUIRÚRGICO: ENTRENAMIENTO DE IA (Versión 2.2)
+ * SCRIPT QUIRÚRGICO: ENTRENAMIENTO DE IA (Versión 2.3)
  * Reconstruye la tabla 'sinonimos'.
- * ¡Nueva emoción agregada: Esperanza!
+ * ¡Nueva emoción agregada: Gratitud!
  */
 
 const sqlite3 = require("sqlite3").verbose();
@@ -11,7 +11,7 @@ const rutaDB = path.join(__dirname, "../biblia.db");
 const db = new sqlite3.Database(rutaDB);
 
 console.log(
-  "Entrenando la Inteligencia Artificial (Cargando diccionario V2.2)...",
+  "Entrenando la Inteligencia Artificial (Cargando diccionario V2.3)...",
 );
 
 db.serialize(() => {
@@ -45,6 +45,11 @@ db.serialize(() => {
         ('confiad', 'Esperanza', 2, 'raiz'),
         ('ilusio', 'Esperanza', 2, 'raiz'),
         ('optimis', 'Esperanza', 2, 'raiz'),
+
+        -- Gratitud (¡NUEVO!)
+        ('agradec', 'Gratitud', 3, 'raiz'),
+        ('gracias', 'Gratitud', 3, 'exacta'),
+        ('gratitud', 'Gratitud', 3, 'raiz'),
         
         -- Ansiedad / Preocupación
         ('ansios', 'Ansiedad/Preocupación', 2, 'raiz'),
@@ -90,7 +95,7 @@ db.serialize(() => {
       console.error("Error al poblar diccionario:", err.message);
     } else {
       console.log(
-        "¡Diccionario cargado con éxito! Se ha añadido 'Esperanza' y 'Fe'.",
+        "¡Diccionario cargado con éxito! Se ha añadido 'Gratitud' a tu IA.",
       );
     }
 
