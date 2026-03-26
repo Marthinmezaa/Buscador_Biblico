@@ -1,271 +1,190 @@
 [
   {
-    "libro": "Jeremías",
-    "capitulo": 29,
-    "versiculo": 11,
-    "texto": "Porque yo conozco los planes que tengo para ustedes —afirma el Señor—, planes de bienestar y no de calamidad, a fin de darles un futuro y una esperanza.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 42,
-    "versiculo": 11,
-    "texto": "¿Por qué estás tan abatida, alma mía? ¿Por qué estás angustiada? En Dios pondré mi esperanza y lo seguiré alabando. ¡Él es mi salvación y mi Dios!",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Isaías",
-    "capitulo": 40,
-    "versiculo": 31,
-    "texto": "Pero los que confían en el Señor renovarán sus fuerzas; levantarán el vuelo como las águilas, correrán y no se fatigarán, caminarán y no se cansarán.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 121,
-    "versiculo": "7-8",
-    "texto": "El Señor te cuidará; de todo mal guardará tu vida. El Señor cuidará tu salida y tu entrada, desde ahora y para siempre.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Romanos",
-    "capitulo": 15,
-    "versiculo": 13,
-    "texto": "Que el Dios de la esperanza los llene de toda alegría y paz a ustedes que creen en él, para que rebosen de esperanza por el poder del Espíritu Santo.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Mateo",
-    "capitulo": 11,
-    "versiculo": 28,
-    "texto": "Vengan a mí todos ustedes que están cansados y agobiados; yo les daré descanso.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Romanos",
+    "libro": "1 Tesalonicenses",
     "capitulo": 5,
-    "versiculo": "3-4",
-    "texto": "Y no solo en esto, sino también en nuestros sufrimientos, porque sabemos que el sufrimiento produce perseverancia; la perseverancia, entereza de carácter; la entereza de carácter, esperanza.",
-    "emocion": "Esperanza",
+    "versiculo": "16-18",
+    "texto": "Estén siempre alegres, oren sin cesar, den gracias a Dios en toda situación, porque esta es su voluntad para ustedes en Cristo Jesús.",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   },
 
   {
-    "libro": "Hebreos",
-    "capitulo": 11,
-    "versiculo": 1,
-    "texto": "Ahora bien, la fe es tener confianza en lo que esperamos, es tener certeza de lo que no vemos.",
-    "emocion": "Esperanza",
+    "libro": "Filipenses",
+    "capitulo": 4,
+    "versiculo": "6-7",
+    "texto": "No se preocupen por nada; más bien, en toda ocasión, con oración y ruego, presenten sus peticiones a Dios y denle gracias. Y la paz de Dios, que sobrepasa todo entendimiento, cuidará sus corazones y sus pensamientos en Cristo Jesús.",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   },
 
   {
     "libro": "1 Corintios",
-    "capitulo": 13,
-    "versiculo": 13,
-    "texto": "Ahora, pues, permanecen la fe, la esperanza y el amor. Pero el amor es el más importante.",
-    "emocion": "Esperanza",
+    "capitulo": 15,
+    "versiculo": 57,
+    "texto": "¡Pero gracias a Dios que nos da la victoria por medio de nuestro Señor Jesucristo!",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   },
 
   {
-    "libro": "Salmo",
-    "capitulo": 119,
-    "versiculo": 114,
-    "texto": "Tú eres mi escondite y mi escudo; en tu palabra he puesto mi esperanza.",
-    "emocion": "Esperanza",
+    "libro": "1 Crónicas",
+    "capitulo": 16,
+    "versiculo": 34,
+    "texto": "Den gracias al Señor porque él es bueno; su gran amor perdura para siempre.",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   },
 
   {
-    "libro": "Hebreos",
-    "capitulo": 10,
-    "versiculo": 23,
-    "texto": "Mantengamos firme la esperanza que profesamos, porque fiel es el que hizo la promesa.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 31,
-    "versiculo": 24,
-    "texto": "Cobren ánimo y ármense de valor, todos los que en el Señor esperan.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Miqueas",
-    "capitulo": 7,
-    "versiculo": 7,
-    "texto": "Pero yo he puesto mi esperanza en el Señor; yo espero en el Dios de mi salvación. ¡Mi Dios me escuchará!",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Romanos",
-    "capitulo": 8,
-    "versiculo": 25,
-    "texto": "Pero si esperamos lo que todavía no vemos, en la espera mostramos nuestra constancia.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Proverbios",
-    "capitulo": 13,
-    "versiculo": 12,
-    "texto": "La esperanza que se demora aflige al corazón; el deseo cumplido es un árbol de vida.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Lamentaciones",
-    "capitulo": 3,
-    "versiculo": 24,
-    "texto": "Me digo a mí mismo: «El Señor es mi herencia. ¡En él esperaré!».",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 25,
-    "versiculo": 5,
-    "texto": "Encamíname en tu verdad. Y enséñame, porque tú eres mi Dios y mi salvación. ¡En ti pongo mi esperanza todo el día!",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Romanos",
-    "capitulo": 5,
-    "versiculo": 5,
-    "texto": "Y esta esperanza no nos defrauda, porque Dios ha derramado su amor en nuestro corazón por el Espíritu Santo que nos ha dado.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 33,
-    "versiculo": 22,
-    "texto": "Que tu gran amor, Señor, nos acompañe, tal como lo esperamos de ti.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 130,
-    "versiculo": 5,
-    "texto": "Espero al Señor, lo espero con toda el alma; en su palabra he puesto mi esperanza.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "1 Pedro",
+    "libro": "2 Tesalonicenses",
     "capitulo": 1,
     "versiculo": 3,
-    "texto": "¡Bendito sea Dios, Padre de nuestro Señor Jesucristo! Por su gran misericordia, nos ha hecho nacer de nuevo mediante la resurrección de Jesucristo de entre los muertos, para que tengamos una esperanza viva.",
-    "emocion": "Esperanza",
+    "texto": "Hermanos, siempre debemos dar gracias a Dios por ustedes, como es justo, porque su fe se acrecienta cada vez más y en cada uno de ustedes sigue abundando el amor hacia los otros.",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   },
 
   {
-    "libro": "Isaías",
-    "capitulo": 61,
+    "libro": "Romanos",
+    "capitulo": 11,
+    "versiculo": 36,
+    "texto": "Porque todas las cosas proceden de él, y existen por él y para él. ¡A él sea la gloria por siempre! Amén.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Salmo",
+    "capitulo": 9,
     "versiculo": 1,
-    "texto": "El Espíritu del Señor y Dios está sobre mí, por cuanto me ha ungido para anunciar buenas noticias a los pobres. Me ha enviado a sanar los corazones heridos, a proclamar libertad a los cautivos y la liberación de los prisioneros.",
-    "emocion": "Esperanza",
+    "texto": "Quiero alabarte, Señor, con todo el corazón, y contar todas tus maravillas.",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   },
 
   {
-    "libro": "1 Pedro",
+    "libro": "Colosenses",
+    "capitulo": 3,
+    "versiculo": 17,
+    "texto": "Y todo lo que hagan, de palabra o de obra, háganlo en el nombre del Señor Jesús, dando gracias a Dios el Padre por medio de él.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Colosenses",
     "capitulo": 3,
     "versiculo": 15,
-    "texto": "Más bien, honren en su corazón a Cristo como Señor. Estén siempre preparados para responder a todo el que pida razón de la esperanza que hay en ustedes. Pero háganlo con gentileza y respeto.",
-    "emocion": "Esperanza",
+    "texto": "Que gobierne en sus corazones la paz de Cristo, a la cual fueron llamados en un solo cuerpo. Y sean agradecidos.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Colosenses",
+    "capitulo": 4,
+    "versiculo": 2,
+    "texto": "Dedíquense a la oración: perseveren en ella con agradecimiento.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "2 Corintios",
+    "capitulo": 9,
+    "versiculo": 11,
+    "texto": "Ustedes serán enriquecidos en todo sentido para que en toda ocasión puedan ser generosos, y para que por medio de nosotros la generosidad de ustedes resulte en acciones de gracias a Dios.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Colosenses",
+    "capitulo": 3,
+    "versiculo": 16,
+    "texto": "Que habite en ustedes la palabra de Cristo con toda su riqueza: instrúyanse y aconséjense unos a otros con toda sabiduría; canten salmos, himnos y canciones espirituales a Dios, con gratitud de corazón.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Apocalipsis",
+    "capitulo": 5,
+    "versiculo": 13,
+    "texto": "Y oí a cuanta criatura hay en el cielo, en la tierra, debajo de la tierra y en el mar, a todos en la creación, que cantaban: «¡Al que está sentado en el trono y al Cordero, sean la alabanza y la honra, la gloria y el poder, por los siglos de los siglos!».",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Jonás",
+    "capitulo": 2,
+    "versiculo": 9,
+    "texto": "Yo, en cambio, te ofreceré sacrificios y cánticos de gratitud. Cumpliré las promesas que te hice. ¡La salvación viene del Señor!",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Lucas",
+    "capitulo": 22,
+    "versiculo": 19,
+    "texto": "También tomó pan y, después de dar gracias, lo partió, se lo dio a ellos y dijo: —Esto es mi cuerpo, entregado por ustedes; hagan esto en memoria de mí.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Salmo",
+    "capitulo": 28,
+    "versiculo": 7,
+    "texto": "El Señor es mi fuerza y mi escudo; mi corazón en él confía; de él recibo ayuda. Mi corazón salta de alegría, y con cánticos le daré gracias.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Salmo",
+    "capitulo": 100,
+    "versiculo": 4,
+    "texto": "Entren por sus puertas con acción de gracias; vengan a sus atrios con himnos de alabanza; denle gracias, alaben su nombre.",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   },
 
   {
     "libro": "Efesios",
-    "capitulo": 4,
-    "versiculo": 4,
-    "texto": "Hay un solo cuerpo y un solo Espíritu, así como también fueron llamados a una sola esperanza.",
-    "emocion": "Esperanza",
+    "capitulo": 1,
+    "versiculo": 3,
+    "texto": "Alabado sea Dios, Padre de nuestro Señor Jesucristo, que nos ha bendecido en las regiones celestiales con toda bendición espiritual en Cristo.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Santiago",
+    "capitulo": 1,
+    "versiculo": 17,
+    "texto": "Toda buena dádiva y todo don perfecto descienden de lo alto, donde está el Padre que creó las lumbreras celestes, y que no cambia como los astros ni se mueve como las sombras.",
+    "emocion": "Gratitud",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Efesios",
+    "capitulo": 2,
+    "versiculo": "8-9",
+    "texto": "Porque por gracia ustedes han sido salvados mediante la fe; esto no procede de ustedes, sino que es el regalo de Dios, no por obras, para que nadie se jacte.",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   },
 
   {
     "libro": "Colosenses",
     "capitulo": 1,
-    "versiculo": 27,
-    "texto": "A estos Dios se propuso dar a conocer cuál es la gloriosa riqueza de este misterio entre las naciones, que es Cristo en ustedes, la esperanza de gloria.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Proverbios",
-    "capitulo": 24,
-    "versiculo": 14,
-    "texto": "Ten en cuenta que así es la sabiduría a tu alma; si das con ella, tendrás buen futuro; tendrás una esperanza que no será destruida.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Efesios",
-    "capitulo": 1,
-    "versiculo": 18,
-    "texto": "Pido también que les sean iluminados los ojos del corazón para que sepan a qué esperanza él los ha llamado, cuál es la riqueza de su gloriosa herencia entre pueblo santo.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "1 Corintios",
-    "capitulo": 13,
-    "versiculo": "6-7",
-    "texto": "El amor no se deleita en la maldad, sino que se regocija con la verdad. Todo lo disculpa, todo lo cree, todo lo espera, todo lo soporta.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 62,
-    "versiculo": 5,
-    "texto": "Solo en Dios halla descanso mi alma; de él viene mi esperanza.",
-    "emocion": "Esperanza",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Romanos",
-    "capitulo": 15,
-    "versiculo": 4,
-    "texto": "De hecho, todo lo que se escribió en el pasado se escribió para enseñarnos, a fin de que alentados por las Escrituras, perseveremos en mantener nuestra esperanza.",
-    "emocion": "Esperanza",
+    "versiculo": "11b-14",
+    "texto": "Así perseverarán con paciencia en toda situación, dando gracias con alegría al Padre. Él los ha facultado para participar de la herencia de los santos en el reino de la luz. Él nos libró del dominio de la oscuridad y nos trasladó al reino de su amado Hijo, en quien tenemos redención, el perdón de pecados.",
+    "emocion": "Gratitud",
     "categoria": "Positivos"
   }
 ]
