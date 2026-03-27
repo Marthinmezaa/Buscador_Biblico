@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/Marthinmezaa/Buscador_Biblico_Clean/compare/v1.2.0...v1.3.0) (2026-03-27)
+
+
+### Features
+
+* agregar versiculos y entrenamiento para la emocion confianza y fe ([d5f7984](https://github.com/Marthinmezaa/Buscador_Biblico_Clean/commit/d5f7984086a422cf9f8159f35d7d8de235f716f9))
+* agregar versiculos y entrenamiento para la emocion confianza y fe ([8230a83](https://github.com/Marthinmezaa/Buscador_Biblico_Clean/commit/8230a83591088d5625c449c6d5e415a502fe3d93))
+
 ## [1.2.0](https://github.com/Marthinmezaa/Buscador_Biblico_Clean/compare/v1.1.1...v1.2.0) (2026-03-26)
 
 
