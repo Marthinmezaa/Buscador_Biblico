@@ -1,7 +1,7 @@
 /**
- * SCRIPT QUIRÚRGICO: ENTRENAMIENTO DE IA (Versión 2.3)
+ * SCRIPT QUIRÚRGICO: ENTRENAMIENTO DE IA (Versión 2.4)
  * Reconstruye la tabla 'sinonimos'.
- * ¡Nueva emoción agregada: Gratitud!
+ * ¡Categorías ajustadas y nueva emoción: Confianza / Fe!
  */
 
 const sqlite3 = require("sqlite3").verbose();
@@ -11,7 +11,7 @@ const rutaDB = path.join(__dirname, "../biblia.db");
 const db = new sqlite3.Database(rutaDB);
 
 console.log(
-  "Entrenando la Inteligencia Artificial (Cargando diccionario V2.3)...",
+  "Entrenando la Inteligencia Artificial (Cargando diccionario V2.4)...",
 );
 
 db.serialize(() => {
@@ -26,7 +26,7 @@ db.serialize(() => {
       tipo_match TEXT
   )`);
 
-  // 3. Inyectamos las traducciones completas
+  // 3. Inyectamos las traducciones con la nueva estructura
   const sql = `INSERT INTO sinonimos (palabra_clave, emocion_oficial, intensidad, tipo_match) VALUES 
         -- Gozo / Alegría
         ('goz', 'Gozo/Alegría', 2, 'raiz'),
@@ -40,13 +40,19 @@ db.serialize(() => {
         
         -- Esperanza
         ('esperanz', 'Esperanza', 3, 'raiz'),
-        ('fe', 'Esperanza', 3, 'exacta'),
-        ('confianz', 'Esperanza', 2, 'raiz'),
-        ('confiad', 'Esperanza', 2, 'raiz'),
         ('ilusio', 'Esperanza', 2, 'raiz'),
         ('optimis', 'Esperanza', 2, 'raiz'),
+        ('aguard', 'Esperanza', 2, 'raiz'),
 
-        -- Gratitud (¡NUEVO!)
+        -- Confianza / Fe
+        ('confianz', 'Confianza/Fe', 3, 'raiz'),
+        ('confia', 'Confianza/Fe', 3, 'raiz'),
+        ('confio', 'Confianza/Fe', 3, 'raiz'),
+        ('fe', 'Confianza/Fe', 3, 'exacta'),
+        ('cree', 'Confianza/Fe', 2, 'raiz'),
+        ('segur', 'Confianza/Fe', 2, 'raiz'),
+
+        -- Gratitud
         ('agradec', 'Gratitud', 3, 'raiz'),
         ('gracias', 'Gratitud', 3, 'exacta'),
         ('gratitud', 'Gratitud', 3, 'raiz'),
@@ -95,7 +101,7 @@ db.serialize(() => {
       console.error("Error al poblar diccionario:", err.message);
     } else {
       console.log(
-        "¡Diccionario cargado con éxito! Se ha añadido 'Gratitud' a tu IA.",
+        "¡Diccionario cargado con éxito! Categorías 'Esperanza' y 'Confianza/Fe' listas y separadas.",
       );
     }
 
