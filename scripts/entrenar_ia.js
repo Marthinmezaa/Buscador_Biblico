@@ -1,7 +1,7 @@
 /**
- * SCRIPT QUIRÚRGICO: ENTRENAMIENTO DE IA (Versión 2.5)
+ * SCRIPT QUIRÚRGICO: ENTRENAMIENTO DE IA (Versión 2.6)
  * Reconstruye la tabla 'sinonimos'.
- * ¡Nueva emoción agregada: Compasión / Misericordia!
+ * ¡Nueva emoción agregada: Valentía / Coraje!
  */
 
 const sqlite3 = require("sqlite3").verbose();
@@ -11,7 +11,7 @@ const rutaDB = path.join(__dirname, "../biblia.db");
 const db = new sqlite3.Database(rutaDB);
 
 console.log(
-  "Entrenando la Inteligencia Artificial (Cargando diccionario V2.5)...",
+  "Entrenando la Inteligencia Artificial (Cargando diccionario V2.6)...",
 );
 
 db.serialize(() => {
@@ -26,7 +26,7 @@ db.serialize(() => {
       tipo_match TEXT
   )`);
 
-  // 3. Inyectamos las traducciones completas
+  // 3. Inyectamos las traducciones ordenadas lógicamente
   const sql = `INSERT INTO sinonimos (palabra_clave, emocion_oficial, intensidad, tipo_match) VALUES 
         -- Gozo / Alegría
         ('goz', 'Gozo/Alegría', 2, 'raiz'),
@@ -51,6 +51,14 @@ db.serialize(() => {
         ('fe', 'Confianza/Fe', 3, 'exacta'),
         ('cree', 'Confianza/Fe', 2, 'raiz'),
         ('segur', 'Confianza/Fe', 2, 'raiz'),
+
+        -- Valentía / Coraje
+        ('valen', 'Valentía/Coraje', 3, 'raiz'),
+        ('coraj', 'Valentía/Coraje', 3, 'raiz'),
+        ('esforz', 'Valentía/Coraje', 2, 'raiz'),
+        ('valeros', 'Valentía/Coraje', 2, 'raiz'),
+        ('anim', 'Valentía/Coraje', 2, 'raiz'),
+        ('valien', 'Valentía/Coraje', 3, 'raiz'),
 
         -- Gratitud
         ('agradec', 'Gratitud', 3, 'raiz'),
@@ -108,7 +116,7 @@ db.serialize(() => {
       console.error("Error al poblar diccionario:", err.message);
     } else {
       console.log(
-        "¡Diccionario cargado con éxito! Ahora tu IA entiende la 'Compasión' y el 'Perdón'.",
+        "¡Diccionario cargado con éxito! Ahora tu IA reconoce la Valentía y el Coraje.",
       );
     }
 

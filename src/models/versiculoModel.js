@@ -13,14 +13,12 @@ const Versiculo = {
    */
   buscarPorEtiqueta: (nombreEtiqueta, callback) => {
     // Consulta SQL usando INNER JOIN para unir las 3 tablas relacionales.
-    // Usamos ORDER BY RANDOM() para que el usuario no vea siempre los mismos versículos.
     const sql = `
             SELECT v.libro, v.capitulo, v.numero_versiculo, v.texto 
             FROM versiculos v
             INNER JOIN versiculo_etiqueta ve ON v.id = ve.versiculo_id
             INNER JOIN etiquetas e ON ve.etiqueta_id = e.id
             WHERE e.nombre = ?
-            ORDER BY RANDOM() LIMIT 3
         `;
 
     // Ejecutamos la consulta. Usamos [nombreEtiqueta] en lugar de inyectar la variable
