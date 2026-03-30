@@ -1,244 +1,100 @@
 [
   {
-    "libro": "Hebreos",
-    "capitulo": 4,
-    "versiculo": 16,
-    "texto": "Así que acerquémonos confiadamente al trono de la gracia para recibir la misericordia y encontrar la gracia que nos ayuden oportunamente.",
-    "emocion": "Compasión/Misericordia",
+    "libro": "Deuteronomio",
+    "capitulo": 31,
+    "versiculo": 8,
+    "texto": "El Señor mismo marchará al frente de ti y estará contigo; nunca te dejará ni te abandonará. No temas ni te desanimes.",
+    "emocion": "Valentía/Coraje",
     "categoria": "Positivos"
   },
 
   {
-    "libro": "Mateo",
-    "capitulo": 9,
+    "libro": "Josué",
+    "capitulo": 1,
+    "versiculo": 9,
+    "texto": "Ya te lo he ordenado: ¡Sé fuerte y valiente! ¡No tengas miedo ni te desanimes! Porque el Señor tu Dios te acompañará dondequiera que vayas.",
+    "emocion": "Valentía/Coraje",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "2 Corintios",
+    "capitulo": 1,
+    "versiculo": "3-4",
+    "texto": "Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre misericordioso y Dios de toda consolación, quien nos consuela en todas nuestras tribulaciones para que, con el mismo consuelo que de Dios hemos recibido, también nosotros podamos consolar a todos los que sufren.",
+    "emocion": "Valentía/Coraje",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "1 Corintios",
+    "capitulo": 16,
     "versiculo": 13,
-    "texto": "Pero vayan y aprendan qué significa esto: “Lo que pido de ustedes es misericordia y no sacrificios”. Porque no he venido a llamar a justos, sino a pecadores.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Efesios",
-    "capitulo": 2,
-    "versiculo": "4-5",
-    "texto": "Pero Dios, que es rico en misericordia, por su gran amor por nosotros, nos dio vida con Cristo, aun cuando estábamos muertos en pecados. ¡Por gracia ustedes han sido salvados!",
-    "emocion": "Compasión/Misericordia",
+    "texto": "Manténganse alerta; permanezcan firmes en la fe; sean valientes y fuertes.",
+    "emocion": "Valentía/Coraje",
     "categoria": "Positivos"
   },
 
   {
     "libro": "Salmo",
-    "capitulo": 51,
-    "versiculo": "1-2",
-    "texto": "Ten piedad de mí, oh Dios, conforme a tu gran amor; conforme a tu misericordia, borra mis transgresiones. Lávame de toda mi maldad y límpiame de mi pecado.",
-    "emocion": "Compasión/Misericordia",
+    "capitulo": 31,
+    "versiculo": 24,
+    "texto": "Cobren ánimo y ármense de valor, todos los que en el Señor esperan.",
+    "emocion": "Valentía/Coraje",
     "categoria": "Positivos"
   },
 
   {
-    "libro": "2 Crónicas",
-    "capitulo": 30,
-    "versiculo": "9b",
-    "texto": "El Señor su Dios es misericordioso y compasivo. Si ustedes se vuelven a él, jamás los abandonará.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Miqueas",
-    "capitulo": 7,
-    "versiculo": 18,
-    "texto": "¿Qué Dios hay como tú, que perdone la maldad y pase por alto el delito del remanente de su heredad? No estarás airado para siempre, porque tu mayor placer es amar.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Isaías",
-    "capitulo": 30,
-    "versiculo": 18,
-    "texto": "Por eso el Señor los espera, para tenerles piedad; por eso se levanta para mostrarles compasión. Porque el Señor es un Dios de justicia. ¡Dichosos todos los que en él esperan!",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Mateo",
-    "capitulo": 6,
-    "versiculo": 14,
-    "texto": "Porque si perdonan a otros sus ofensas, también los perdonará a ustedes su Padre celestial.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 25,
-    "versiculo": "6-7",
-    "texto": "Acuérdate, Señor, de tu misericordia y gran amor, que siempre me has mostrado. Olvida los pecados y las transgresiones que cometí en mi juventud. Acuérdate de mí según tu gran amor, porque tú, Señor, eres bueno.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 40,
-    "versiculo": 11,
-    "texto": "No me niegues, Señor, tu misericordia; que siempre me protejan tu amor y tu verdad.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Romanos",
-    "capitulo": 12,
-    "versiculo": 1,
-    "texto": "Por lo tanto, hermanos, tomando en cuenta la misericordia de Dios, ruego que cada uno de ustedes, en adoración espiritual, ofrezca su cuerpo como sacrificio vivo, santo y agradable a Dios.",
-    "emocion": "Compasión/Misericordia",
+    "libro": "Juan",
+    "capitulo": 14,
+    "versiculo": 27,
+    "texto": "La paz les dejo; mi paz les doy. Yo no se la doy a ustedes como la da el mundo. No se angustien ni se acobarden.",
+    "emocion": "Valentía/Coraje",
     "categoria": "Positivos"
   },
 
   {
     "libro": "Salmo",
     "capitulo": 23,
-    "versiculo": 6,
-    "texto": "Seguro estoy de que la bondad y el amor me seguirán todos los días de mi vida; y en la casa del Señor habitaré para siempre.",
-    "emocion": "Compasión/Misericordia",
+    "versiculo": 4,
+    "texto": "Aun si voy por valles tenebrosos, no temeré ningún mal porque tú estás a mi lado; tu vara y tu bastón me reconfortan.",
+    "emocion": "Valentía/Coraje",
     "categoria": "Positivos"
   },
 
   {
-    "libro": "Salmo",
-    "capitulo": 90,
-    "versiculo": 17,
-    "texto": "Que el favor del Señor nuestro Dios esté sobre nosotros. Confirma en nosotros la obra de nuestras manos; sí, confirma la obra de nuestras manos.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Romanos",
-    "capitulo": 6,
-    "versiculo": 15,
-    "texto": "Entonces, ¿qué? ¿Vamos a pecar porque no estamos ya bajo la Ley, sino bajo la gracia? ¡De ninguna manera!",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Nehemías",
-    "capitulo": 9,
-    "versiculo": 31,
-    "texto": "Sin embargo, es tal tu compasión que no los destruiste ni abandonaste, porque eres Dios misericordioso y compasivo.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 112,
-    "versiculo": 5,
-    "texto": "Bien le va al que presta con generosidad, y maneja sus negocios con justicia.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Salmo",
-    "capitulo": 130,
-    "versiculo": "1-2",
-    "texto": "A ti, Señor, elevo mi clamor desde lo más profundo de mi ser. Escucha, Señor, mi voz. Estén atentos tus oídos a mi voz suplicante.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "2 Corintios",
-    "capitulo": 12,
-    "versiculo": 9,
-    "texto": "Pero él me dijo: «Te basta con mi gracia, pues mi poder se perfecciona en la debilidad». Por lo tanto, gustosamente presumiré más bien de mis debilidades, para que permanezca sobre mí el poder de Cristo.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Juan",
-    "capitulo": 3,
-    "versiculo": 16,
-    "texto": "Porque tanto amó Dios al mundo que dio a su Hijo único, para que todo el que cree en él no se pierda, sino que tenga vida eterna.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Proverbios",
-    "capitulo": 28,
-    "versiculo": 13,
-    "texto": "Quien encubre su pecado jamás prospera; quien lo confiesa y lo deja, alcanza la misericordia.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Romanos",
-    "capitulo": 5,
-    "versiculo": 15,
-    "texto": "Pero el pecado de Adán no puede compararse con la gracia de Dios. Pues, si por el pecado de un solo hombre murieron todos, ¡cuánto más el don que vino por la gracia de un solo hombre, Jesucristo, abundó para todos!",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Isaías",
-    "capitulo": 55,
-    "versiculo": 7,
-    "texto": "Que abandone el malvado su camino y el perverso sus pensamientos. Que se vuelva al Señor, a nuestro Dios, que es generoso para perdonar y de él recibirá compasión.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Tito",
-    "capitulo": 3,
-    "versiculo": 5,
-    "texto": "Él nos salvó, no por nuestras propias obras de justicia, sino por su misericordia. Nos salvó mediante el lavamiento de la regeneración y de la renovación por el Espíritu Santo.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Mateo",
-    "capitulo": 18,
-    "versiculo": "21-22",
-    "texto": "Pedro se acercó a Jesús y preguntó: —Señor, ¿cuántas veces tengo que perdonar a mi hermano que peca contra mí? ¿Hasta siete veces? —No te digo que hasta siete veces, sino hasta setenta veces siete —contestó Jesús—.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "2 Corintios",
-    "capitulo": 13,
-    "versiculo": 14,
-    "texto": "Que la gracia del Señor Jesucristo, el amor de Dios y la comunión del Espíritu Santo sean con todos ustedes.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Jeremías",
-    "capitulo": 3,
-    "versiculo": 12,
-    "texto": "“¡Vuelve, apóstata Israel! No te miraré con ira”, afirma el Señor. “No te guardaré rencor para siempre, porque soy misericordioso”, afirma el Señor.",
-    "emocion": "Compasión/Misericordia",
-    "categoria": "Positivos"
-  },
-
-  {
-    "libro": "Filipenses",
+    "libro": "2 Timoteo",
     "capitulo": 1,
-    "versiculo": 29,
-    "texto": "Porque a ustedes se les ha concedido no solo creer en Cristo, sino también sufrir por él.",
-    "emocion": "Compasión/Misericordia",
+    "versiculo": 7,
+    "texto": "Pues Dios no nos ha dado un espíritu de timidez, sino de poder, de amor y de dominio propio.",
+    "emocion": "Valentía/Coraje",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Deuteronomio",
+    "capitulo": 31,
+    "versiculo": 6,
+    "texto": "Sean fuertes y valientes. No teman ni se asusten ante esas naciones, pues el Señor su Dios siempre los acompañará; nunca los dejará ni los abandonará.",
+    "emocion": "Valentía/Coraje",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Salmo",
+    "capitulo": 27,
+    "versiculo": 14,
+    "texto": "Pon tu esperanza en el Señor; cobra ánimo y ármate de valor, ¡pon tu esperanza en el Señor!",
+    "emocion": "Valentía/Coraje",
+    "categoria": "Positivos"
+  },
+
+  {
+    "libro": "Marcos",
+    "capitulo": 6,
+    "versiculo": "49-50",
+    "texto": "Los discípulos, al verlo caminar sobre el agua, creyeron que era un fantasma y se pusieron a gritar, llenos de miedo por lo que veían. Pero él habló enseguida con ellos y les dijo: «¡Cálmense! Soy yo. No tengan miedo».",
+    "emocion": "Valentía/Coraje",
     "categoria": "Positivos"
   }
 ]

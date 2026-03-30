@@ -17,12 +17,6 @@ const inputBusqueda = document.getElementById("input-busqueda");
 const btnBuscar = document.getElementById("btn-buscar");
 
 // ==========================================
-// 1.5. CACHE DE RESULTADOS (Mejora de Performance)
-// ==========================================
-const cache = new Map();
-const TTL = 3600000; // 1 hora en milisegundos
-
-// ==========================================
 // 2. CONTROL DEL MENU LATERAL
 // ==========================================
 btnMenu.addEventListener("click", () => menuLateral.classList.add("activo"));
@@ -124,39 +118,20 @@ function renderizarResultados(versiculos) {
 }
 
 // ==========================================
-// 5. BUSQUEDA Y RENDERIZADO DE VERSICULOS (con Cache)
+// 5. BUSQUEDA DE VERSICULOS (Directo al Backend Veloz)
 // ==========================================
 async function buscarVersiculos(emocion) {
-  const claveCache = emocion.toLowerCase().trim();
-
-  // 1. VERIFICAR CACHE
-  if (cache.has(claveCache)) {
-    const entradaCache = cache.get(claveCache);
-    const ahora = Date.now();
-
-    if (ahora - entradaCache.timestamp < TTL) {
-      console.log(
-        `Resultados obtenidos desde cache (vigente) para: "${emocion}"`,
-      );
-      indicadorBusqueda.innerHTML = `Ultima busqueda: <strong>"${emocion}"</strong> <span style="color: #4CAF50; font-size: 0.85rem;">(cache vigente)</span>`;
-      renderizarResultados(entradaCache.data);
-      return;
-    } else {
-      console.log(`Cache expirado para: "${emocion}"`);
-      cache.delete(claveCache);
-    }
-  }
-
-  // 2. SI NO ESTA EN CACHE
+  // Mostramos estado de carga
   contenedorResultados.innerHTML =
     '<p class="mensaje-bienvenida">Buscando en la Biblia...</p>';
   indicadorBusqueda.innerHTML = `Ultima busqueda: <strong>"${emocion}"</strong>`;
 
   try {
+    // Vamos SIEMPRE al backend a pedir versiculos frescos
     const respuesta = await fetch(`/api/buscar/${encodeURIComponent(emocion)}`);
     const datos = await respuesta.json();
 
-    // 3. MANEJO DE ERRORES INTELIGENTE (Solucion al UNDEFINED)
+    // MANEJO DE ERRORES INTELIGENTE
     if (!respuesta.ok) {
       const textoMostrar =
         datos.mensaje ||
@@ -166,9 +141,7 @@ async function buscarVersiculos(emocion) {
       return;
     }
 
-    // 4. GUARDAR EN CACHE Y RENDERIZAR
-    cache.set(claveCache, { data: datos, timestamp: Date.now() });
-    console.log(`Resultados guardados en cache (con TTL) para: "${emocion}"`);
+    // SI HAY EXITO, DIBUJAMOS LAS CARTAS
     renderizarResultados(datos);
   } catch (error) {
     console.error("Error en la peticion de busqueda:", error);
